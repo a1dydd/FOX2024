@@ -1,5 +1,6 @@
 import React, { useEffect } from 'react';
 import { BrowserRouter as Router, Route, Routes, useLocation } from 'react-router-dom';
+import { Helmet } from 'react-helmet'; // Import Helmet
 import favicon from './assets/FOXB2.png';
 import Header from './components/Header';
 import Hero from './components/Hero';
@@ -32,36 +33,20 @@ function App() {
     document.getElementsByTagName('head')[0].appendChild(link);
   };
 
-  // Set document title and favicon based on the current route
+  // Update favicon based on the current route
   useEffect(() => {
-    switch (location.pathname) {
-      case '/':
-        document.title = 'FOX';
-        updateFavicon(favicon);
-        break;
-      case '/login':
-        document.title = 'FOX Asset';
-        updateFavicon(favicon);
-        break;
-      case '/register':
-        document.title = 'FOX Register';
-        updateFavicon(favicon);
-        break;
-      case '/blog':
-        document.title = 'FOX Blog';
-        updateFavicon(favicon);
-        break;
-      default:
-        document.title = 'FOX';
-        updateFavicon(favicon);
-    }
+    updateFavicon(favicon);
   }, [location.pathname]);
 
   return (
     <div>
       <Routes>
-        <Route path="/home" element={
+        <Route path="/" element={
           <>
+            <Helmet>
+              <title>FOX</title>
+              <meta name="description" content="Home page of FOX website." />
+            </Helmet>
             <Header />
             <Hero />
             <Main />
@@ -73,10 +58,14 @@ function App() {
             <Copyright />
             <Cookie />
           </>
-        } />
+        } />  
 
         <Route path="/login" element={
           <>
+            <Helmet>
+              <title>FOX Asset</title>
+              <meta name="description" content="Login to FOX Asset." />
+            </Helmet>
             <Login />
             <Footer />
             <Copyright />
@@ -86,6 +75,10 @@ function App() {
 
         <Route path="/register" element={
           <>
+            <Helmet>
+              <title>FOX Request</title>
+              <meta name="description" content="Register for FOX Request." />
+            </Helmet>
             <Header />
             <Register />
             <Footer />
@@ -96,6 +89,10 @@ function App() {
 
         <Route path="/termprivacy" element={
           <>
+            <Helmet>
+              <title>FOX Terms & Privacy</title>
+              <meta name="description" content="FOX Terms & Privacy Policy." />
+            </Helmet>
             <Header />
             <TermPrivacy />
             <Footer />
@@ -106,6 +103,10 @@ function App() {
 
         <Route path="/aboutus" element={
           <>
+            <Helmet>
+              <title>FOX About Us</title>
+              <meta name="description" content="Learn more about FOX." />
+            </Helmet>
             <Header />
             <AboutUs />
             <MainCTA />
@@ -117,6 +118,10 @@ function App() {
 
         <Route path="/blog" element={
           <>
+            <Helmet>
+              <title>FOX Blog</title>
+              <meta name="description" content="Explore FOX blog posts." />
+            </Helmet>
             <Header />
             <Blog />
             <Footer />
@@ -125,8 +130,12 @@ function App() {
           </>
         } />
 
-        <Route path="" element={
+        <Route path="*" element={
           <>
+            <Helmet>
+              <title>Page Not Found</title>
+              <meta name="description" content="This page does not exist." />
+            </Helmet>
             <Header />
             <PageNotFound />
             <MainCTA />

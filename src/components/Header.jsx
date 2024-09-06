@@ -25,7 +25,7 @@ const Header = () => {
   };
 
   const handleImageClick = () => {
-    navigate('/home');
+    navigate('/');
     setTimeout(() => {
       window.scrollTo({ top: 0, behavior: 'smooth' });
     }, 0);
@@ -140,7 +140,7 @@ const Header = () => {
                 <a href="/aboutus">About Us</a>
               </li>
               <li className='font-semibold text-md'>
-                <a href="">Blog</a>
+                <a href="/blog">Blog</a>
               </li>
             </ul>
           </div>
@@ -207,7 +207,7 @@ const Header = () => {
               </a>
             </li>
             <li className='py-3'>
-              <a href="" className='font-semibold text-md flex items-center w-full' onClick={handleSidebarClose}>
+              <a href="/blog" className='font-semibold text-md flex items-center w-full' onClick={handleSidebarClose}>
                 Blog
               </a>
             </li>

@@ -5,7 +5,7 @@ const Login = () => {
   return (
     <div className='relative px-[100px] py-7'>
       <div className='flex mb-6'>
-        <a href="/home">
+        <a href="/">
           <img className="w-[90px] h-[45px]" src={FOXB} alt="FOX Logo" />
         </a>
       </div>
