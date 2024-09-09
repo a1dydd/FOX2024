@@ -9,7 +9,7 @@ const Blog = () => {
 
   useEffect(() => {
     // Fetch blog posts from WordPress REST API with embedded media
-    axios.get('http://43.216.156.21/blog/wp-json/wp/v2/posts?_embed=true')
+    axios.get('http://"PUBLIC IP"/blog/wp-json/wp/v2/posts?_embed=true')
       .then(response => {
         setPosts(response.data);
         setLoading(false);

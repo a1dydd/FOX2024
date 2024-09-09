@@ -12,7 +12,7 @@ import MainCTA from './components/MainCTA';
 import Footer from './components/Footer';
 import Copyright from './components/Copyright';
 import Cookie from './components/Cookie';
-import Login from './components/Login';
+//import Login from './components/Login'; 
 import Register from './components/Register';
 import TermPrivacy from './components/TermPrivacy';
 import AboutUs from './components/AboutUs';
@@ -60,7 +60,7 @@ function App() {
           </>
         } />  
 
-        <Route path="/login" element={
+        {/*<Route path="/login" element={
           <>
             <Helmet>
               <title>FOX Asset</title>
@@ -71,7 +71,7 @@ function App() {
             <Copyright />
             <Cookie />
           </>
-        } />
+        } /> */}
 
         <Route path="/register" element={
           <>
