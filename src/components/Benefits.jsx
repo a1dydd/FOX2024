@@ -93,7 +93,7 @@ const Benefits = () => {
             left: scrollTo,
             behavior: 'smooth'
           });
-        }
+        } 
       }, 500); // Adjust delay if needed
     }
   };
@@ -124,10 +124,10 @@ const Benefits = () => {
                                      xs:min-w-[100vw] xs:px-[10px] xs:flex-shrink-0
                                      sm:min-w-[100vw] sm:px-[10px] sm:flex-shrink-0
                                      md:min-w-[100vw] md:px-[10px] md:flex-shrink-0 
-                                     lg:min-w-[100vw] lg:px-[70px] lg:flex-shrink-0 lg:flex lg:items-start lg:gap-8
-                                     xl:min-w-[100vw] xl:px-[70px] xl:flex-shrink-0 xl:flex xl:items-start xl:gap-8">
-        <div>
-          <img className="xxs:w-[300px] xxs:h-[200px]
+                                     lg:min-w-[100vw] lg:px-[70px] lg:flex-shrink-0 lg:flex lg:items-center lg:justify-center lg:gap-8
+                                     xl:min-w-[100vw] xl:px-[70px] xl:flex-shrink-0 xl:flex xl:items-center xl:justify-center xl:gap-8">
+        <div className="flex justify-center items-center">
+          <img className="xxs:w-[300px] xxs:h-[200px] 
                            xs:w-[458px] xs:h-[306px]
                            sm:w-[619px] sm:h-[413px]
                            md:w-[737px] md:h-[492px]
@@ -162,9 +162,9 @@ const Benefits = () => {
                                      xs:min-w-[100vw] xs:px-[10px] xs:flex-shrink-0
                                      sm:min-w-[100vw] sm:px-[10px] sm:flex-shrink-0
                                      md:min-w-[100vw] md:px-[10px] md:flex-shrink-0 
-                                     lg:min-w-[100vw] lg:px-[70px] lg:flex-shrink-0 lg:flex lg:items-start lg:gap-8
-                                     xl:min-w-[100vw] xl:px-[70px] xl:flex-shrink-0 xl:flex xl:items-start xl:gap-20">
-        <div>
+                                     lg:min-w-[100vw] lg:px-[70px] lg:flex-shrink-0 lg:flex lg:items-center lg:justify-center lg:gap-8
+                                     xl:min-w-[100vw] xl:px-[70px] xl:flex-shrink-0 xl:flex xl:items-center xl:justify-center xl:gap-20">
+        <div className="flex justify-center items-center">
           <img className="xxs:w-[300px] xxs:h-[200px]
                            xs:w-[458px] xs:h-[306px]
                            sm:w-[619px] sm:h-[413px]
@@ -200,9 +200,9 @@ const Benefits = () => {
                                      xs:min-w-[100vw] xs:px-[10px] xs:flex-shrink-0
                                      sm:min-w-[100vw] sm:px-[10px] sm:flex-shrink-0
                                      md:min-w-[100vw] md:px-[10px] md:flex-shrink-0 
-                                     lg:min-w-[100vw] lg:px-[70px] lg:flex-shrink-0 lg:flex lg:items-start lg:gap-8
-                                     xl:min-w-[100vw] xl:px-[70px] xl:flex-shrink-0 xl:flex xl:items-start xl:gap-20">
-        <div>
+                                     lg:min-w-[100vw] lg:px-[70px] lg:flex-shrink-0 lg:flex lg:items-center lg:justify-center lg:gap-8
+                                     xl:min-w-[100vw] xl:px-[70px] xl:flex-shrink-0 xl:flex xl:items-center xl:justify-center xl:gap-20">
+        <div className="flex justify-center items-center">
           <img className="xxs:w-[300px] xxs:h-[200px]
                            xs:w-[458px] xs:h-[306px]
                            sm:w-[619px] sm:h-[413px]
