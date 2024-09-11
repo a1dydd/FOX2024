@@ -101,7 +101,13 @@ const Benefits = () => {
   return (
     <div
       ref={carouselRef}
-      className="carousel flex overflow-x-scroll scroll-smooth cursor-grab"
+      className="xxs:my-[50px]
+                  xs:my-[50px]
+                  sm:my-[50px]
+                  md:my-[50px]
+                  lg:my-[100px]
+                  xl:my-[100px] 
+                  carousel flex overflow-x-scroll scroll-smooth cursor-grab"
       style={{
         scrollbarWidth: 'none', 
         msOverflowStyle: 'none', 
@@ -114,46 +120,115 @@ const Benefits = () => {
       onTouchMove={handleDragMove}
       onTouchEnd={handleDragEnd}
     >
-      <div id="benefit1" className="flex-shrink-0 flex items-start justify-between min-w-[100vw] px-[70px] py-[150px]">
+      <div id="benefit1" className="xxs:min-w-[100vw] xxs:px-[10px] xxs:flex-shrink-0
+                                     xs:min-w-[100vw] xs:px-[10px] xs:flex-shrink-0
+                                     sm:min-w-[100vw] sm:px-[10px] sm:flex-shrink-0
+                                     md:min-w-[100vw] md:px-[10px] md:flex-shrink-0 
+                                     lg:min-w-[100vw] lg:px-[70px] lg:flex-shrink-0 lg:flex lg:items-start lg:gap-8
+                                     xl:min-w-[100vw] xl:px-[70px] xl:flex-shrink-0 xl:flex xl:items-start xl:gap-8">
         <div>
-          <img className="w-[810px] h-[500px] rounded-xl" src={BOX} alt="Benefit 01" />
+          <img className="xxs:w-[300px] xxs:h-[200px]
+                           xs:w-[458px] xs:h-[306px]
+                           sm:w-[619px] sm:h-[413px]
+                           md:w-[737px] md:h-[492px]
+                           lg:w-[467px] lg:h-[300px]
+                           xl:w-[587px] xl:h-[360px] 
+                           rounded-xl" src={BOX} alt="Benefit 01" />
         </div>
-        <div className="">
-          <h1 className="font-bold text-4xl text-right">
+        <div>
+          <h1 className="xxs:text-[26px] xxs:text-center
+                          xs:text-[41px] xs:text-center
+                          sm:text-[55px] sm:text-center
+                          md:text-[65px] md:text-center
+                          lg:text-[35px] lg:text-right
+                          xl:text-5xl xl:text-right
+                          font-bold">
           Streamlined Operations
           </h1>
-          <p className="text-right text-2xl py-4">
+          <p className="xxs:text-[14px] xxs:text-center
+                         xs:text-[22px] xs:pt-[10px] xs:text-center 
+                         sm:text-3xl sm:pt-[10px] sm:text-center 
+                         md:text-4xl md:pt-[10px] md:text-center 
+                         lg:text-lg lg:py-4 lg:text-right
+                         xl:text-2xl xl:py-4 xl:text-right
+                        ">
             FOX simplifies complex workflows,
             <br />making facility management more 
             <br />efficient and organized.
           </p>
         </div>
       </div>
-      <div id="benefit2" className="flex-shrink-0 flex items-start justify-between min-w-[100vw] px-[70px] py-[150px]">
+      <div id="benefit2" className="xxs:min-w-[100vw] xxs:px-[10px] xxs:flex-shrink-0
+                                     xs:min-w-[100vw] xs:px-[10px] xs:flex-shrink-0
+                                     sm:min-w-[100vw] sm:px-[10px] sm:flex-shrink-0
+                                     md:min-w-[100vw] md:px-[10px] md:flex-shrink-0 
+                                     lg:min-w-[100vw] lg:px-[70px] lg:flex-shrink-0 lg:flex lg:items-start lg:gap-8
+                                     xl:min-w-[100vw] xl:px-[70px] xl:flex-shrink-0 xl:flex xl:items-start xl:gap-20">
         <div>
-          <img className="w-[810px] h-[500px] rounded-xl" src={BOX} alt="Benefit 01" />
+          <img className="xxs:w-[300px] xxs:h-[200px]
+                           xs:w-[458px] xs:h-[306px]
+                           sm:w-[619px] sm:h-[413px]
+                           md:w-[737px] md:h-[492px]
+                           lg:w-[467px] lg:h-[300px]
+                           xl:w-[587px] xl:h-[360px] 
+                           rounded-xl" src={BOX} alt="Benefit 01" />
         </div>
-        <div className="">
-          <h1 className="font-bold text-4xl text-right">
+        <div>
+          <h1 className="xxs:text-[26px] xxs:text-center
+                          xs:text-[41px] xs:text-center
+                          sm:text-[55px] sm:text-center
+                          md:text-[65px] md:text-center
+                          lg:text-[35px] lg:text-right
+                          xl:text-5xl xl:text-right
+                          font-bold">
           Enhanced Productivity
           </h1>
-          <p className="text-right text-2xl py-4">
-          With intuitive tools for planning and 
+          <p className="xxs:text-[14px] xxs:text-center
+                         xs:text-[22px] xs:pt-[10px] xs:text-center 
+                         sm:text-3xl sm:pt-[10px] sm:text-center 
+                         md:text-4xl md:pt-[10px] md:text-center 
+                         lg:text-lg lg:py-4 lg:text-right
+                         xl:text-2xl xl:py-4 xl:text-right
+                        ">
+            With intuitive tools for planning and 
           <br />execution, FOX boosts productivity by 
           <br />reducing manual tasks.
           </p>
         </div>
       </div>
-      <div id="benefit3" className="flex-shrink-0 flex items-start justify-between min-w-[100vw] px-[70px] py-[150px]">
+      <div id="benefit3" className="xxs:min-w-[100vw] xxs:px-[10px] xxs:flex-shrink-0
+                                     xs:min-w-[100vw] xs:px-[10px] xs:flex-shrink-0
+                                     sm:min-w-[100vw] sm:px-[10px] sm:flex-shrink-0
+                                     md:min-w-[100vw] md:px-[10px] md:flex-shrink-0 
+                                     lg:min-w-[100vw] lg:px-[70px] lg:flex-shrink-0 lg:flex lg:items-start lg:gap-8
+                                     xl:min-w-[100vw] xl:px-[70px] xl:flex-shrink-0 xl:flex xl:items-start xl:gap-20">
         <div>
-          <img className="w-[810px] h-[500px] rounded-xl" src={BOX} alt="Benefit 03" />
+          <img className="xxs:w-[300px] xxs:h-[200px]
+                           xs:w-[458px] xs:h-[306px]
+                           sm:w-[619px] sm:h-[413px]
+                           md:w-[737px] md:h-[492px]
+                           lg:w-[467px] lg:h-[300px]
+                           xl:w-[587px] xl:h-[360px] 
+                           rounded-xl" src={BOX} alt="Benefit 01" />
         </div>
-        <div className="">
-          <h1 className="font-bold text-4xl text-right">
+        <div>
+          <h1 className="xxs:text-[26px] xxs:text-center
+                          xs:text-[41px] xs:text-center
+                          sm:text-[55px] sm:text-center
+                          md:text-[65px] md:text-center
+                          lg:text-[35px] lg:text-right
+                          xl:text-5xl xl:text-right
+                          font-bold">
           Data-Driven Insights
           </h1>
-          <p className="text-right text-2xl py-4">
-          FOX provides powerful analytics, helping 
+          <p className="xxs:text-[14px] xxs:text-center
+                         xs:text-[22px] xs:pt-[10px] xs:text-center 
+                         sm:text-3xl sm:pt-[10px] sm:text-center 
+                         md:text-4xl md:pt-[10px] md:text-center 
+                         lg:text-lg lg:py-4 lg:text-right
+                         xl:text-2xl xl:py-4 xl:text-right
+                        ">
+            FOX provides powerful analytics, helping 
           <br />you make informed decisions and 
           <br />optimize asset performance.
           </p>

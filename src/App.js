@@ -47,7 +47,7 @@ function App() {
               <title>FOX</title>
               <meta name="description" content="Home page of FOX website." />
             </Helmet>
-            <Header />
+             <Header />
             <Hero />
             <Main />
             <Logo />
@@ -56,7 +56,7 @@ function App() {
             <MainCTA />
             <Footer />
             <Copyright />
-            <Cookie />
+           {/* <Cookie />*/}
           </>
         } />  
 
