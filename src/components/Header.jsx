@@ -147,7 +147,7 @@ const Header = () => {
           <div className='flex items-center ml-auto'>
             <ul className='hidden xxs:flex items-center gap-4'>
               <li>
-                <a href="https://app.foxmy.io/login"> 
+                <a href="/login"> 
                   <button className='font-semibold text-md hover:bg-gray-200 rounded-lg h-[30px] w-[75px]'>
                     Log in
                   </button>

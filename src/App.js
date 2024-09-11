@@ -12,7 +12,6 @@ import MainCTA from './components/MainCTA';
 import Footer from './components/Footer';
 import Copyright from './components/Copyright';
 import Cookie from './components/Cookie';
-//import Login from './components/Login'; 
 import Register from './components/Register';
 import TermPrivacy from './components/TermPrivacy';
 import AboutUs from './components/AboutUs';
@@ -120,7 +119,7 @@ function App() {
           <>
             <Helmet>
               <title>FOX Blog</title>
-              <meta name="description" content="Explore FOX blog posts." />
+              <meta name="description" content="Explore FOX blog posts."/>
             </Helmet>
             <Header />
             <Blog />
