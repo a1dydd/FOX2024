@@ -111,9 +111,9 @@ const Header = () => {
 
   return (
     <>
-      {/* Header for md and larger screens */}
-      <header className={`hidden md:flex bg-white h-[60px] w-full fixed top-0 left-0 z-50 transition-all duration-300 ${isScrolled ? 'border-b-2 border-gray-300 shadow-md' : ''}`}>
-        <div className='flex justify-between items-center w-full md:px-[20px] sm:px-[15px] xs:px-[10px]'>
+      {/* Header for lg and larger screens */}
+      <header className={`hidden lg:flex bg-white h-[60px] w-full fixed top-0 left-0 z-50 transition-all duration-300 ${isScrolled ? 'border-b-2 border-gray-300 shadow-md' : ''}`}>
+        <div className='flex justify-between items-center w-full lg:px-[20px] sm:px-[15px] xs:px-[10px]'>
           <div className='flex items-center'>
             <img className='h-[45px] w-[90px] cursor-pointer' src={FOX} alt="FOX logo" onClick={handleImageClick} />
             <ul className='hidden xxs:flex items-center gap-5 ml-5'>
@@ -165,8 +165,8 @@ const Header = () => {
         </div>
       </header>
 
-      {/* Header for xxs, xs, sm screens */}
-      <header className='md:hidden fixed top-0 left-0 w-full bg-white h-[60px] flex items-center justify-between px-4 shadow-md z-50'>
+      {/* Header for screens smaller than lg */}
+      <header className='lg:hidden fixed top-0 left-0 w-full bg-white h-[60px] flex items-center justify-between px-4 shadow-md z-50'>
         <img className='h-[45px] w-[90px] cursor-pointer' src={FOX} alt="FOX logo" onClick={handleImageClick} />
         <TiThMenu className='text-3xl cursor-pointer' onClick={handleSidebarToggle} />
       </header>
@@ -217,7 +217,7 @@ const Header = () => {
               </a>
             </li>
             <li className='py-3'>
-              <a href="/register" className='font-semibold text-md text-white bg-black hover:bg-gray-200 hover:text-black flex items-center justify-center w-full h-[30px] rounded-lg'>
+              <a href="/register" className='font-semibold text-md text-white bg-black hover:bg-gray-200 hover:text-black rounded-lg w-full text-center block'>
                 Get Fox Now
               </a>
             </li>

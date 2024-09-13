@@ -55,7 +55,7 @@ function App() {
             <MainCTA />
             <Footer />
             <Copyright />
-           {/* <Cookie />*/}
+            <Cookie />
           </>
         } />  
 
@@ -115,7 +115,7 @@ function App() {
           </>
         } />
 
-        <Route path="/blog" element={
+       {/* <Route path="/blog" element={
           <>
             <Helmet>
               <title>FOX Blog</title>
@@ -127,7 +127,7 @@ function App() {
             <Copyright />
             <Cookie />
           </>
-        } />
+        } />*/}
 
         <Route path="*" element={
           <>
