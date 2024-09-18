@@ -5,7 +5,6 @@ import favicon from './assets/FOXB2.png';
 import Header from './components/Header';
 import Hero from './components/Hero';
 import Main from './components/Main';
-import Logo from './components/Logo';
 import Benefits from './components/Benefits';
 import MainFeatures from './components/MainFeatures';
 import MainCTA from './components/MainCTA';
@@ -17,6 +16,10 @@ import TermPrivacy from './components/TermPrivacy';
 import AboutUs from './components/AboutUs';
 import PageNotFound from './components/PageNotFound';
 import Blog from './components/Blog'; // Import your Blog component
+import Benefit1 from './components/Benefit1';
+import Benefit2 from './components/Benefit2';
+import Benefit3 from './components/Benefit3';
+import Benefit4 from './components/Benefit4';
 
 function App() {
   const location = useLocation();
@@ -38,7 +41,7 @@ function App() {
   }, [location.pathname]);
 
   return (
-    <div>
+    <div className='2xl:max-w-[1500px] 2xl:w-full 2xl:flex 2xl:flex-col 2xl:items-center 2xl:justify-center mx-auto'>
       <Routes>
         <Route path="/" element={
           <>
@@ -49,28 +52,70 @@ function App() {
              <Header />
             <Hero />
             <Main />
-            <Logo />
             <Benefits />
             <MainFeatures />
             <MainCTA />
-            <Footer />
+             <Footer />
             <Copyright />
-            <Cookie />
+           <Cookie /> {/* */}
           </>
         } />  
 
-        {/*<Route path="/login" element={
+        <Route path="/benefit1" element={
           <>
             <Helmet>
-              <title>FOX Asset</title>
-              <meta name="description" content="Login to FOX Asset." />
+              <title>FOX Benefit</title>
+              <meta name="description" content="FOX Benefit 1" />
             </Helmet>
-            <Login />
+            <Header />
+            <Benefit1 />
             <Footer />
             <Copyright />
             <Cookie />
           </>
-        } /> */}
+        } />
+
+        <Route path="/benefit2" element={
+          <>
+            <Helmet>
+              <title>FOX Benefit</title>
+              <meta name="description" content="FOX Benefit 2" />
+            </Helmet>
+            <Header />
+            <Benefit2 />
+            <Footer />
+            <Copyright />
+            <Cookie />
+          </>
+        } />
+
+        <Route path="/benefit3" element={
+          <>
+            <Helmet>
+              <title>FOX Benefit</title>
+              <meta name="description" content="FOX Benefit 3" />
+            </Helmet>
+            <Header />
+            <Benefit3 />
+            <Footer />
+            <Copyright />
+            <Cookie />
+          </>
+        } />
+
+        <Route path="/benefit4" element={
+          <>
+            <Helmet>
+              <title>FOX Benefit</title>
+              <meta name="description" content="FOX Benefit 4" />
+            </Helmet>
+            <Header />
+            <Benefit4 />
+            <Footer />
+            <Copyright />
+            <Cookie />
+          </>
+        } />
 
         <Route path="/register" element={
           <>

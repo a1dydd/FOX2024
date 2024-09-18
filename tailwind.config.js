@@ -4,16 +4,23 @@ module.exports = {
   theme: {
     extend: {
       screens: {
-        'xs': '360px',   // Small phones
-        'sm': '640px',   // Phones, small tablets
-        'md': '768px',   // Tablets, small laptops
-        'lg': '1024px',  // Laptops, desktops
-        'xl': '1280px',  // Large desktops
-        '2xl': '1440px', // Extra large desktops (2K screens)
-        '3xl': '1920px', // Full HD screens (1080p)
-        '4xl': '2560px', // Quad HD screens (1440p)
-        '5xl': '3840px', // 4K screens
-
+        'sm': '360px',   
+        'md': '703px',  
+        'lg': '941px',   
+        'xl': '1054px',  
+        '2xl': '1204px',  
+      },
+      keyframes: {
+        'underline-animate': {
+          '0%': { transform: 'scaleX(0)', transformOrigin: 'right' },
+          '100%': { transform: 'scaleX(1)', transformOrigin: 'left' },
+        },
+      },
+      animation: {
+        'underline-animate': 'underline-animate 0.3s ease-out',
+      },
+      colors: {
+        'highlight': '#E14E52',
       },
     },
   },
