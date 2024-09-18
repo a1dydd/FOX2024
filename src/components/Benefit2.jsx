@@ -1,4 +1,5 @@
 import React from 'react'
+import BOX from '../assets/BOX.jpg';
 
 const Benefit2 = () => {
   return (

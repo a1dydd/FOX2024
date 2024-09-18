@@ -83,7 +83,7 @@ const Header = () => {
           <a href="/blog"><h1 className='cursor-pointer font-semibold text-md ml-[35px]'>Blog</h1></a>
         </div>
         <div className='flex items-center'>
-          <a href="/login">
+          <a href="https://app.foxmy.io/login">
             <button className='font-semibold text-md hover:bg-gray-200 rounded-lg h-[30px] w-[75px]'>
               Log in
             </button>
@@ -152,7 +152,7 @@ const Header = () => {
               </a>
             </li>
             <li className='py-3'>
-              <a href="/login" className='font-semibold text-md flex items-center w-full'>
+              <a href="https://app.foxmy.io/login" className='font-semibold text-md flex items-center w-full'>
                 Log in
               </a>
             </li>

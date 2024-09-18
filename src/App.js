@@ -15,7 +15,6 @@ import Register from './components/Register';
 import TermPrivacy from './components/TermPrivacy';
 import AboutUs from './components/AboutUs';
 import PageNotFound from './components/PageNotFound';
-import Blog from './components/Blog'; // Import your Blog component
 import Benefit1 from './components/Benefit1';
 import Benefit2 from './components/Benefit2';
 import Benefit3 from './components/Benefit3';

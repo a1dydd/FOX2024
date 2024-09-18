@@ -3,21 +3,19 @@ import Cookies from 'js-cookie';
 
 const Cookie = () => {
   const [showBanner, setShowBanner] = useState(false);
-  const [consentGiven, setConsentGiven] = useState(false);
 
   useEffect(() => {
     const consent = Cookies.get('cookieConsent');
     if (!consent) {
       setShowBanner(true); // Show banner if no consent cookie is found
     } else {
-      setConsentGiven(true); // Consent was already given or declined
+      setShowBanner(false); // Hide the banner if consent is already given or declined
     }
   }, []);
 
   const handleAccept = () => {
     Cookies.set('cookieConsent', 'true', { expires: 365 });
     setShowBanner(false);
-    setConsentGiven(true);
   };
 
   const handleDecline = () => {

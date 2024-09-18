@@ -17,7 +17,7 @@ const MainCTA = () => {
       w-full font-bold tracking-[-4px]'>
       Get Started with FOX
       </h1>
-        <a href="" className='
+        <a href="/register" className='
         sm:w-full sm:justify-center sm:flex
         md:w-full md:justify-center md:flex
         lg:w-full lg:justify-end lg:flex

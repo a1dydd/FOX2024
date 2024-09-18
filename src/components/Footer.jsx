@@ -31,28 +31,28 @@ const Footer = () => {
             xl:text-[35px] 
             2xl:text-[35px] 
             font-bold'>Company</h1>
-            <a href="#" className='
+            <a href="/aboutus" className='
             sm:text-[15px] sm:mt-2
             md:text-[20px] md:mt-2
             lg:text-[20px] lg:mt-2
             xl:text-[20px] xl:mt-2
             2xl:text-[20px] 2xl:mt-2  
             font-semibold'>About Us</a>
-            <a href="#" className='
+            <a href="https://infinitywave.io/" className='
             sm:text-[15px] sm:mt-2
             md:text-[20px] md:mt-2
             lg:text-[20px] lg:mt-2
             xl:text-[20px] xl:mt-2
             2xl:text-[20px] 2xl:mt-2 
             font-semibold'>Infinity Wave</a>
-            <a href="#" className='
+            <a href="https://infinitywave.io/Career" className='
             sm:text-[15px] sm:mt-2
             md:text-[20px] md:mt-2
             lg:text-[20px] lg:mt-2
             xl:text-[20px] xl:mt-2
             2xl:text-[20px] 2xl:mt-2  
             font-semibold'>Careers</a>
-            <a href="#" className='
+            <a href="/termprivacy" className='
             sm:text-[15px] sm:mt-2
             md:text-[20px] md:mt-2
             lg:text-[20px] lg:mt-2
@@ -73,27 +73,27 @@ const Footer = () => {
             xl:text-[35px] 
             2xl:text-[35px] 
             font-bold'>Download</h1>
-            <a href="#" className='
+            <a href="https://apps.apple.com/my/app/fox-smart-facility-management/id6475958098" className='
             sm:text-[15px] sm:mt-2
             md:text-[20px] md:mt-2
             lg:text-[20px] lg:mt-2
             xl:text-[20px] xl:mt-2
             2xl:text-[20px] 2xl:mt-2  
             font-semibold'>iOS</a>
-            <a href="#" className='
+            <a href="https://play.google.com/store/apps/details?id=io.foxmy.app&hl=en-MY" className='
             sm:text-[15px] sm:mt-2
             md:text-[20px] md:mt-2
             lg:text-[20px] lg:mt-2
             xl:text-[20px] xl:mt-2
             2xl:text-[20px] 2xl:mt-2  
             font-semibold'>Android</a>
-            <a href="#" className='
+         {/*<a href="#" className='
             sm:text-[15px] sm:mt-2
             md:text-[20px] md:mt-2
             lg:text-[20px] lg:mt-2
             xl:text-[20px] xl:mt-2
             2xl:text-[20px] 2xl:mt-2  
-            font-semibold'>Cookie Settings</a>
+            font-semibold'>Cookie Settings</a>*/}
           </div>
           <div className='flex flex-col text-left 
           sm:gap-1
@@ -109,32 +109,32 @@ const Footer = () => {
             2xl:text-[35px] 
             font-bold'>Social</h1>
             <div className='flex mt-2'>
-              <img src={ind} alt="Instagram" className='
+              <a href="https://my.linkedin.com/company/infinitywavetech"> <img src={ind} alt="Linkind" className='
                sm:w-[30px] sm:mr-5
                md:w-[30px] md:mr-5
                lg:w-[30px] lg:mr-5
                xl:w-[30px] xl:mr-5 
-               2xl:w-[30px] 2xl:mr-5' />
-              <img src={fa} alt="Facebook" className='
+               2xl:w-[30px] 2xl:mr-5' /></a>
+               <a href="https://www.facebook.com/myinfinitywave"><img src={fa} alt="Facebook" className='
                sm:w-[30px] sm:mr-5
                md:w-[30px] md:mr-5
                lg:w-[30px] lg:mr-5
                xl:w-[30px] xl:mr-5 
-               2xl:w-[30px] 2xl:mr-5' />
-              <img src={wha} alt="WhatsApp" className='
+               2xl:w-[30px] 2xl:mr-5' /></a>
+               <a href="*"><img src={wha} alt="WhatsApp" className='
                sm:w-[30px] sm:mr-5
                md:w-[30px] md:mr-5
                lg:w-[30px] lg:mr-5
                xl:w-[30px] xl:mr-5 
-               2xl:w-[30px] 2xl:mr-5' />
-              <img src={yo} alt="YouTube" className='
+               2xl:w-[30px] 2xl:mr-5' /></a>
+              <a href="https://www.youtube.com/channel/UCX_zJiMFFsTMnH0D2y2DFrg"> <img src={yo} alt="YouTube" className='
                sm:w-[30px]
                md:w-[30px]
                lg:w-[30px]
                xl:w-[30px]
-               2xl:w-[30px]' />
+               2xl:w-[30px]' /></a>
             </div>
-            <a href="#" className='
+            <a href="/blog" className='
             sm:text-[15px] sm:mt-2
             md:text-[20px] md:mt-2
             lg:text-[20px] lg:mt-2
