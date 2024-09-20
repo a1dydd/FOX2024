@@ -30,7 +30,7 @@ const MainCTA = () => {
         xl:text-[17px] xl:w-[150px] xl:h-[40px] xl:mt-[25px] xl:mr-[130px]
         2xl:text-[17px] 2xl:w-[150px] 2xl:h-[40px] 2xl:mt-[25px] 2xl:mr-[330px]
         font-semibold rounded-lg text-white bg-[#FF5A5F] hover:bg-[#E14E52] hover:text-white'>
-        Get Fox Now
+        Get FOX Now
         </button>
         </a>
     </section>

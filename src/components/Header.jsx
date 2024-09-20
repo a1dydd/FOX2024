@@ -64,23 +64,33 @@ const Header = () => {
             </button>
             {isDropdownOpen && (
               <ul className='absolute left-0 mt-2 w-48 bg-white border border-gray-300 rounded-lg shadow-lg'>
-                <li className='font-bold text-md p-3 hover:bg-gray-100'>
+                <li className='font-semibold text-md p-3 hover:bg-gray-100'>
                   <a href="/benefit1">Planner</a>
                 </li>
-                <li className='font-bold text-md p-3 hover:bg-gray-100'>
+                <li className='font-semibold text-md p-3 hover:bg-gray-100'>
                   <a href="/benefit2">Work Flow</a>
                 </li>
-                <li className='font-bold text-md p-3 hover:bg-gray-100'>
+                <li className='font-semibold text-md p-3 hover:bg-gray-100'>
                   <a href="/benefit3">Dahsboard</a>
                 </li>
-                <li className='font-bold text-md p-3 hover:bg-gray-100'>
+                <li className='font-semibold text-md p-3 hover:bg-gray-100'>
                   <a href="/benefit4">Customisation</a>
                 </li>
               </ul>
             )}
           </div>
-          <a href="/aboutus"><h1 className='cursor-pointer font-semibold text-md ml-[20px]'>About Us</h1></a>
-          <a href="/blog"><h1 className='cursor-pointer font-semibold text-md ml-[35px]'>Blog</h1></a>
+        <span className='relative inline-block ml-[20px] group'>
+         <a href="/aboutus" className='cursor-pointer font-semibold text-md'>
+             About Us
+         </a>
+         <span className='absolute left-0 bottom-0 w-full h-1 bg-highlight transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300 ease-out' />
+        </span>
+        <span className='relative inline-block ml-[30px] group'>
+         <a href="/blog" className='cursor-pointer font-semibold text-md'>
+             Blog
+         </a>
+         <span className='absolute left-0 bottom-0 w-full h-1 bg-highlight transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300 ease-out' />
+        </span>
         </div>
         <div className='flex items-center'>
           <a href="https://app.foxmy.io/login">
@@ -90,7 +100,7 @@ const Header = () => {
           </a>
           <a href="/register">
             <button className='font-semibold text-md text-white bg-[#FF5A5F] hover:bg-[#E14E52] hover:text-white rounded-lg h-[30px] w-[127px] ml-4'>
-              Get Fox Now
+              Get FOX Now
             </button>
           </a>
         </div>
@@ -129,13 +139,13 @@ const Header = () => {
               </button>
               {isSidebarDropdownOpen && (
                 <ul className='mt-2 bg-white border border-gray-300 rounded-lg shadow-lg'>
-                  <li className='font-bold text-md p-3 hover:bg-gray-100'>
+                  <li className='font-semibold text-md p-3 hover:bg-gray-100'>
                     <a href="/benefit1">Benefit 1</a>
                   </li>
-                  <li className='font-bold text-md p-3 hover:bg-gray-100'>
+                  <li className='font-semibold text-md p-3 hover:bg-gray-100'>
                     <a href="/benefit2">Benefit 2</a>
                   </li>
-                  <li className='font-bold text-md p-3 hover:bg-gray-100'>
+                  <li className='font-semibold text-md p-3 hover:bg-gray-100'>
                     <a href="/benefit3">Benefit 3</a>
                   </li>
                 </ul>
@@ -159,7 +169,7 @@ const Header = () => {
             <li className='py-3'>
               <a href="/register" className='py-3'>
                 <button className='font-semibold text-md text-white bg-[#FF5A5F] hover:bg-[#E14E52] hover:text-white rounded-lg w-full text-center h-[30px]'>
-                  Get Fox Now
+                  Get FOX Now
                 </button>
               </a>
             </li>

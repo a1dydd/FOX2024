@@ -109,7 +109,7 @@ const Footer = () => {
             2xl:text-[35px] 
             font-bold'>Social</h1>
             <div className='flex mt-2'>
-              <a href="https://my.linkedin.com/company/infinitywavetech"> <img src={ind} alt="Linkind" className='
+              <a href="https://www.linkedin.com/company/fox-infinitywave"> <img src={ind} alt="Linkind" className='
                sm:w-[30px] sm:mr-5
                md:w-[30px] md:mr-5
                lg:w-[30px] lg:mr-5
@@ -127,7 +127,7 @@ const Footer = () => {
                lg:w-[30px] lg:mr-5
                xl:w-[30px] xl:mr-5 
                2xl:w-[30px] 2xl:mr-5' /></a>
-              <a href="https://www.youtube.com/channel/UCX_zJiMFFsTMnH0D2y2DFrg"> <img src={yo} alt="YouTube" className='
+              <a href="https://www.youtube.com/@foxsmartfacility"> <img src={yo} alt="YouTube" className='
                sm:w-[30px]
                md:w-[30px]
                lg:w-[30px]

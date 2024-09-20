@@ -26,7 +26,7 @@ const MainFeatures = () => {
               md:text-[30px]
               text-[35px] font-bold relative overflow-hidden group'>
                 <span className='relative inline-block'>
-                  Planner
+                  <a href="/benefit1">Planner</a>
                   <span className='absolute left-0 bottom-0 w-full h-1 bg-highlight transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300 ease-out' />
                 </span>
               </h2>
@@ -49,7 +49,7 @@ const MainFeatures = () => {
               md:text-[30px]
               text-[35px] font-bold relative overflow-hidden group'>
                 <span className='relative inline-block'>
-                  Work Flow
+                <a href="/benefit2">Work Flow</a>
                   <span className='absolute left-0 bottom-0 w-full h-1 bg-highlight transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300 ease-out' />
                 </span>
               </h2>
@@ -72,7 +72,7 @@ const MainFeatures = () => {
               md:text-[30px]
               text-[35px] font-bold relative overflow-hidden group'>
                 <span className='relative inline-block'>
-                  Dashboard
+                <a href="/benefit3">Dashboard</a>
                   <span className='absolute left-0 bottom-0 w-full h-1 bg-highlight transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300 ease-out' />
                 </span>
               </h2>
@@ -95,7 +95,7 @@ const MainFeatures = () => {
               md:text-[30px]
               text-[35px] font-bold relative overflow-hidden group'>
                 <span className='relative inline-block'>
-                  Customization
+                <a href="/benefit4">Customization</a>
                   <span className='absolute left-0 bottom-0 w-full h-1 bg-highlight transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300 ease-out' />
                 </span>
               </h2>
