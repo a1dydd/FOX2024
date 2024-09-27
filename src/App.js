@@ -19,7 +19,7 @@ import Benefit1 from './components/Benefit1';
 import Benefit2 from './components/Benefit2';
 import Benefit3 from './components/Benefit3';
 import Benefit4 from './components/Benefit4';
-import Blog from './components/Blog';
+//import Blog from './components/Blog';
 
 function App() {
   const location = useLocation();
@@ -160,7 +160,7 @@ function App() {
           </>
         } />
 
-        <Route path="/blog" element={
+      {/*  <Route path="/blog" element={
           <>
             <Helmet>
               <title>FOX Blog</title>
@@ -172,7 +172,7 @@ function App() {
             <Copyright />
             <Cookie />
           </>
-        } />{/**/}
+        } />*/}
 
         <Route path="*" element={
           <>

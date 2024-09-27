@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { RiArrowDropDownLine } from "react-icons/ri";
 import { TiThMenu } from "react-icons/ti";
 import { IoIosClose } from "react-icons/io";
-import FOX from '../assets/FOXB.png';
+import FOX from '../assets/Logos/FOXB.png';
 
 const Header = () => {
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
@@ -86,7 +86,7 @@ const Header = () => {
          <span className='absolute left-0 bottom-0 w-full h-1 bg-highlight transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300 ease-out' />
         </span>
         <span className='relative inline-block ml-[30px] group'>
-         <a href="/blog" className='cursor-pointer font-semibold text-md'>
+         <a href="*" className='cursor-pointer font-semibold text-md'>
              Blog
          </a>
          <span className='absolute left-0 bottom-0 w-full h-1 bg-highlight transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300 ease-out' />
@@ -108,12 +108,11 @@ const Header = () => {
 
       {/* Mobile Header */}
       <header className='lg:hidden fixed top-0 left-0 w-full bg-white h-[55px] flex items-center justify-between px-4 shadow-md z-50'>
-        <a href="/" onClick={(e) => { e.preventDefault(); window.scrollTo({ top: 0, behavior: 'smooth' }); }}>
+        <a href="/">
           <img 
             src={FOX} 
             alt="FOX Logo" 
-            className='w-[90px] h-[45px]' 
-          />
+            className='w-[90px] h-[45px]' />
         </a>
         <TiThMenu className='text-3xl cursor-pointer' onClick={handleSidebarToggle} />
       </header>
@@ -122,13 +121,12 @@ const Header = () => {
       {isSidebarOpen && (
         <div className='fixed top-0 left-0 h-full w-[70%] xs:w-[344px] sm:w-[400px] bg-white z-40 transition-transform duration-300'>
           <div className='flex items-center justify-between p-4'>
-            <a href="/" onClick={(e) => { e.preventDefault(); window.scrollTo({ top: 0, behavior: 'smooth' }); }}>
-              <img 
-                src={FOX} 
-                alt="FOX Logo" 
-                className='w-[90px] h-[45px]' 
-              />
-            </a>
+          <a href="/" >
+          <img 
+            src={FOX} 
+            alt="FOX Logo" 
+            className='w-[90px] h-[45px]' />
+        </a>
             <IoIosClose className='text-3xl cursor-pointer' onClick={handleSidebarClose} />
           </div>
           <ul className='p-4'>
@@ -140,13 +138,16 @@ const Header = () => {
               {isSidebarDropdownOpen && (
                 <ul className='mt-2 bg-white border border-gray-300 rounded-lg shadow-lg'>
                   <li className='font-semibold text-md p-3 hover:bg-gray-100'>
-                    <a href="/benefit1">Benefit 1</a>
+                    <a href="/benefit1">Planner</a>
                   </li>
                   <li className='font-semibold text-md p-3 hover:bg-gray-100'>
-                    <a href="/benefit2">Benefit 2</a>
+                    <a href="/benefit2">Work Flow</a>
                   </li>
                   <li className='font-semibold text-md p-3 hover:bg-gray-100'>
-                    <a href="/benefit3">Benefit 3</a>
+                    <a href="/benefit3">Dashboard</a>
+                  </li>
+                  <li className='font-semibold text-md p-3 hover:bg-gray-100'>
+                    <a href="/benefit3">Customisation</a>
                   </li>
                 </ul>
               )}

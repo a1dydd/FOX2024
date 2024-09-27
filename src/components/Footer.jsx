@@ -1,16 +1,16 @@
 import React from 'react';
-import ind from '../assets/in.png'; 
-import fa from '../assets/fa.png'; 
-import yo from '../assets/yo.png'; 
-import wha from '../assets/wha.png'; 
+import ind from '../assets/Icons/in.png'; 
+import fa from '../assets/Icons/fa.png'; 
+import yo from '../assets/Icons/yo.png'; 
+import wha from '../assets/Icons/wha.png'; 
 const Footer = () => {
   return (
     <footer className='w-full 
-    sm:mt-[80px] sm:px-[30px]
-    md:mt-[80px] md:px-[30px]
-    lg:mt-[80px] lg:px-[30px]
-    xl:mt-[80px] xl:px-[30px]
-    2xl:mt-[80px] 2xl:px-[30px]'>
+    sm:mt-[100px] sm:px-[30px]
+    md:mt-[100px] md:px-[30px]
+    lg:mt-[100px] lg:px-[30px]
+    xl:mt-[100px] xl:px-[30px]
+    2xl:mt-[100px] 2xl:px-[30px]'>
       <div className='mx-auto '>
         <div className='grid 
         sm:grid-cols-2 sm:gap-8

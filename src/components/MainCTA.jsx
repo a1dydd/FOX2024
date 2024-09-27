@@ -3,11 +3,11 @@ import React from 'react'
 const MainCTA = () => {
   return (
     <section className='
-      sm:w-full sm:px-[30px] sm:mt-[80px] sm:flex sm:flex-col sm:justify-center sm:items-center sm:text-center
-      md:w-full md:px-[30px] md:mt-[80px] md:flex md:justify-center md:items-center md:text-center
-      lg:w-full lg:px-[30px] lg:mt-[80px] lg:flex lg:flex-col lg:justify-center lg:items-center lg:text-center
-      xl:w-full xl:px-[30px] xl:mt-[80px] xl:flex xl:flex-col xl:justify-center xl:items-center xl:text-center
-      2xl:w-full 2xl:px-[30px] 2xl:mt-[80px] 2xl:flex 2xl:flex-col 2xl:justify-center 2xl:items-center 2xl:text-center'>
+      sm:w-full sm:px-[30px] sm:mt-[100px] sm:flex sm:flex-col sm:justify-center sm:items-center sm:text-center
+      md:w-full md:px-[30px] md:mt-[100px] md:flex md:justify-center md:items-center md:text-center
+      lg:w-full lg:px-[30px] lg:mt-[100px] lg:flex lg:flex-col lg:justify-center lg:items-center lg:text-center
+      xl:w-full xl:px-[30px] xl:mt-[100px] xl:flex xl:flex-col xl:justify-center xl:items-center xl:text-center
+      2xl:w-full 2xl:px-[30px] 2xl:mt-[100px] 2xl:flex 2xl:flex-col 2xl:justify-center 2xl:items-center 2xl:text-center'>
       <h1 className='
        sm:text-[50px] sm:leading-[50px]
        md:text-[80px] md:leading-[80px]

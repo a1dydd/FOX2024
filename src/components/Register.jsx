@@ -64,8 +64,13 @@ const Register = () => {
   };
 
   return (
-    <div className='flex items-center justify-between px-[45px] pt-[92px]'>
-      <div className='max-w-[670px] flex flex-col pl-[180px]'>
+    <div className='flex items-center justify-between  pt-[92px]
+     sm:px-[10px] 
+     md:px-[10px] 
+     lg:px-[45px]
+     xl:px-[45px]
+    2xl:px-[45px]'>
+      <div className='max-w-[670px] flex flex-col px-[10px] pr-[20px]'>
         <div>
           <h1 className='font-bold text-6xl tracking-tighter'>
             Talk to our sales team to get started

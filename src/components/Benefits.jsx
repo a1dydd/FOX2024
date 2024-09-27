@@ -1,7 +1,7 @@
 import React, { useRef, useState, useEffect } from 'react';
-import BOX1 from '../assets/BOX.jpg';
-import BOX2 from '../assets/BOX.jpg';
-import BOX3 from '../assets/BOX.jpg';
+import BOX1 from '../assets/Screenshots/5.png';
+import BOX2 from '../assets/Screenshots/5.png';
+import BOX3 from '../assets/Screenshots/5.png';
 
 const images = [BOX1, BOX2, BOX3];
 
@@ -50,11 +50,11 @@ const Benefits = () => {
 
   return (
     <section className='
-    sm:mt-[80px] sm:px-[30px]
-    md:mt-[80px] md:px-[10px]
-    lg:mt-[80px] lg:px-[10px]
-    xl:mt-[80px] xl:px-[10px] 
-    2xl:mt-[80px] 2xl:px-[10px] 
+    sm:mt-[100px] sm:px-[30px]
+    md:mt-[100px] md:px-[10px]
+    lg:mt-[100px] lg:px-[10px]
+    xl:mt-[100px] xl:px-[10px] 
+    2xl:mt-[100px] 2xl:px-[10px] 
     w-full flex flex-col items-center '>
       <div
         ref={carouselRef}
@@ -74,12 +74,12 @@ const Benefits = () => {
           >
             <img src={images[index]} alt={`Benefit ${index + 1}`} 
             className='
-            sm:min-h-[300px] sm:w-full sm:h-full 
-            md:w-[583px] md:h-[290px]
-            lg:w-[781px] lg:h-[389px]
-            xl:w-[874px] xl:h-[437px]
-            2xl:w-[1000px] 2xl:h-[500px] 
-            rounded-lg' />
+            sm:w-full  sm:h-full 
+            md:max-w-[400px] md:h-auto
+            lg:max-w-[500px] lg:h-auto
+            xl:max-w-[600px] xl:h-auto
+            2xl:max-w-[700px] 2xl:h-auto
+            rounded-lg object-contain' />
             <div className='
             sm:text-center
             md:text-right

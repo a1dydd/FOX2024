@@ -1,12 +1,12 @@
 import React, { useState, useEffect } from 'react';
-import gr1 from '../assets/gr1.jpg';
-import gr2 from '../assets/gr2.jpg';
-import gr3 from '../assets/gr3.jpg';
-import gr4 from '../assets/gr1.jpg';
-import plannerIcon from '../assets/calander_icon.png';
-import workflowIcon from '../assets/calander_icon.png';
-import dashboardIcon from '../assets/calander_icon.png';
-import customisationIcon from '../assets/calander_icon.png';
+import gr1 from '../assets/Screenshots/6.png';
+import gr2 from '../assets/Screenshots/10.png';
+import gr3 from '../assets/Screenshots/1.png';
+import gr4 from '../assets/Screenshots/1.png';
+import planner from '../assets/Icons/calander_icon.png';
+import workflow from '../assets/Icons/workflow_icon.png';
+import dashboard from '../assets/Icons/dashboard_icon.png';
+import customization from '../assets/Icons/custom_icon.png';
 
 const images = [gr1, gr2, gr3, gr4];
 
@@ -31,11 +31,11 @@ const Main = () => {
 
   return (
     <section className='
-    sm:mt-[40px] sm:flex sm:flex-col sm:w-full sm:items-center sm:px-[30px]
-    md:mt-[40px] md:flex md:flex-col md:w-full md:items-center m
-    lg:mt-[40px] lg:flex lg:flex-col lg:w-full lg:items-center
-   xl:mt-[40px] xl:flex xl:flex-col xl:w-full xl:items-center
-   2xl:mt-[40px] 2xl:flex 2xl:flex-col 2xl:w-full 2xl:items-center
+    sm:mt-[100px] sm:flex sm:flex-col sm:w-full sm:items-center sm:px-[30px]
+    md:mt-[100px] md:flex md:flex-col md:w-full md:items-center m
+    lg:mt-[100px] lg:flex lg:flex-col lg:w-full lg:items-center
+   xl:mt-[100px] xl:flex xl:flex-col xl:w-full xl:items-center
+   2xl:mt-[100px] 2xl:flex 2xl:flex-col 2xl:w-full 2xl:items-center
     '> 
       <div className='
       sm:text-left
@@ -65,14 +65,18 @@ const Main = () => {
           cost savings.</p>
       </div>
       <div className='
-      sm:min-h-[300px] sm:w-full sm:h-full sm:mt-[25px] sm:flex sm:items-center sm:justify-center sm:relative
-      md:min-h-[500px] md:w-full md:h-full md:mt-[25px] md:flex md:items-center md:justify-center md:relative
+      sm:min-h-[300px] sm:w-full sm:h-full sm:mt-[25px] sm:flex sm:items-center sm:justify-center sm:relative overflow-hidden rounded-lg
+      md:min-h-[500px] md:w-full md:h-full md:mt-[25px] md:flex md:items-center md:justify-center md:relative 
       lg:min-h-[500px] lg:w-full lg:h-full lg:mt-[25px] lg:flex lg:items-center lg:justify-center lg:relative 
       xl:min-h-[600px] xl:w-full xl:h-full xl:mt-[25px] xl:flex xl:items-center xl:justify-center xl:relative 
-     2xl:min-h-[700px] 2xl:w-full 2xl:h-full 2xl:mt-[25px] 2xl:flex 2xl:items-center 2xl:justify-center 2xl:relative '>
-      <img src={images[currentImageIndex]} alt="Current Feature"
-      className={`absolute rounded-lg top-0 left-0 w-full h-full object-cover transition-opacity duration-700 ease-in-out ${isFading ? 'opacity-100' : 'opacity-0'}`}/>
+      2xl:min-h-[700px] 2xl:w-full 2xl:h-full 2xl:mt-[25px] 2xl:flex 2xl:items-center 2xl:justify-center 2xl:relative'>
+      <img 
+      src={images[currentImageIndex]} 
+      alt="Current Feature"
+      className={`w-full h-auto object-contain transition-opacity duration-700 ease-in-out rounded-lg ${isFading ? 'opacity-100' : 'opacity-0'}`}/>
       </div>
+
+
       <div className='
       sm:mt-[25px] sm:gap-2 sm:flex sm:flex-wrap sm:justify-center
       md:mt-[25px] md:gap-5 md:flex md:flex-wrap
@@ -88,7 +92,7 @@ const Main = () => {
           xl:text-[20px] xl:px-[10px] xl:py-[2px] xl:flex
          2xl:text-[20px] 2xl:px-[10px] 2xl:py-[2px] 2xl:flex
          font-semibold items-center rounded-lg border border-[#E14E52]'>
-          <img src={plannerIcon} alt="Icon"
+          <img src={planner} alt="Icon"
           className='
           sm:w-[17px] sm:h-[17px] sm:mr-[2px]
           md:w-[20px] md:h-[20px] md:mr-[2px]
@@ -104,13 +108,13 @@ const Main = () => {
           xl:text-[20px] xl:px-[10px] xl:py-[2px] xl:flex
          2xl:text-[20px] 2xl:px-[10px] 2xl:py-[2px] 2xl:flex
          font-semibold items-center rounded-lg border border-[#E14E52]'>
-          <img src={workflowIcon} alt="Icon"
+          <img src={workflow} alt="Icon"
           className='
-          sm:w-[17px] sm:h-[17px] sm:mr-[2px]
-          md:w-[20px] md:h-[20px] md:mr-[2px]
-          lg:w-[20px] lg:h-[20px] lg:mr-[2px]
-           xl:w-[20px] xl:h-[20px] xl:mr-[2px]
-         2xl:w-[20px] 2xl:h-[20px] 2xl:mr-[2px]'/>Work Flow
+          sm:w-[17px] sm:h-[17px] sm:mr-[6px]
+          md:w-[19px] md:h-[19px] md:mr-[6px]
+          lg:w-[19px] lg:h-[19px] lg:mr-[6px]
+           xl:w-[19px] xl:h-[19px] xl:mr-[6px]
+         2xl:w-[19px] 2xl:h-[19px] 2xl:mr-[6px]'/>Work Flow
         </button>
         <button onClick={() => handleImageChange(2)}
           className='
@@ -120,13 +124,13 @@ const Main = () => {
           xl:text-[20px] xl:px-[10px] xl:py-[2px] xl:flex
          2xl:text-[20px] 2xl:px-[10px] 2xl:py-[2px] 2xl:flex
           font-semibold items-center rounded-lg border border-[#E14E52]'>
-          <img src={dashboardIcon} alt="Icon"
+          <img src={dashboard} alt="Icon"
           className='
-          sm:w-[17px] sm:h-[17px] sm:mr-[2px]
-          md:w-[20px] md:h-[20px] md:mr-[2px]
-          lg:w-[20px] lg:h-[20px] lg:mr-[2px]
-          xl:w-[20px] xl:h-[20px] xl:mr-[2px]
-         2xl:w-[20px] 2xl:h-[20px] 2xl:mr-[2px]'/>Dashboard
+          sm:w-[17px] sm:h-[17px] sm:mr-[4px]
+          md:w-[21px] md:h-[21px] md:mr-[4px]
+          lg:w-[21px] lg:h-[21px] lg:mr-[4px]
+          xl:w-[21px] xl:h-[21px] xl:mr-[4px]
+         2xl:w-[21px] 2xl:h-[21px] 2xl:mr-[4px]'/>Dashboard
         </button>
         <button onClick={() => handleImageChange(3)}
           className='
@@ -136,13 +140,13 @@ const Main = () => {
           xl:text-[20px] xl:px-[10px] xl:py-[2px] xl:flex
          2xl:text-[20px] 2xl:px-[10px] 2xl:py-[2px] 2xl:flex
           font-semibold items-center rounded-lg border border-[#E14E52]'>
-          <img src={customisationIcon} alt="Icon"
+          <img src={customization} alt="Icon"
           className='
-           sm:w-[17px] sm:h-[17px] sm:mr-[2px]
-           md:w-[20px] md:h-[20px] md:mr-[2px]
-           lg:w-[20px] lg:h-[20px] lg:mr-[2px]
-           xl:w-[20px] xl:h-[20px] xl:mr-[2px]
-          2xl:w-[20px] 2xl:h-[20px] 2xl:mr-[2px]'/>Customization
+           sm:w-[17px] sm:h-[17px] sm:mr-[6px]
+           md:w-[19px] md:h-[19px] md:mr-[6px]
+           lg:w-[19px] lg:h-[19px] lg:mr-[6px]
+           xl:w-[19px] xl:h-[19px] xl:mr-[6px]
+          2xl:w-[19px] 2xl:h-[19px] 2xl:mr-[6px]'/>Customization
         </button>
       </div>
     </section>
